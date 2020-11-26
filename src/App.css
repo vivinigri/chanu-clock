@@ -1,6 +1,52 @@
 .App {
   text-align: center;
-  background-color: cornflowerblue;
   width: 100vw;
   height: 100vh;
+  justify-content: center;
+  /* https://jsbin.com/hucalol/embed?html,output */
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCI+CjxmaWx0ZXIgaWQ9Im4iPgo8ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjciIG51bU9jdGF2ZXM9IjEwIiBzdGl0Y2hUaWxlcz0ic3RpdGNoIj48L2ZlVHVyYnVsZW5jZT4KPC9maWx0ZXI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjMDAwIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWx0ZXI9InVybCgjbikiIG9wYWNpdHk9IjAuMjciPjwvcmVjdD4KPC9zdmc+");
+}
+
+.st0{
+  fill:#29ABE2;
+}
+.st1{
+  fill:none;
+  stroke:#FF00DB;
+  stroke-width:3;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-dasharray:0,25,175;
+}
+.st2{
+  fill:none;
+  stroke:#2E00ED;
+  stroke-width:4;
+  stroke-miterlimit:100;
+  stroke-dasharray:0,54,101;
+}
+.st3{
+  fill:none;
+  stroke:#F70285;
+  stroke-width:3;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:100;
+  stroke-dasharray:0,37,129;
+}
+.st4{
+  fill:none;
+  stroke:#FF0400;
+  stroke-width:8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-dasharray:0 36 136;
+}
+.st5{
+  fill:none;
+  stroke:#FFFFFF;
+  stroke-width:2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-dasharray:0,36,136;
 }

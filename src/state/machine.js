@@ -23,21 +23,26 @@ const machine = Machine(
       secs: arSecs,
       sec: 0,
       mins: arMins,
-      min: 0,
+      min: 58,
       hours: arHours,
-      hour: 0,
+      hour: 23,
       days: arDays,
       day: 0,
     },
-    initial: "runSecs",
+    initial: "running",
     states: {
-      runSecs: {
+      idle: {
+        on: {
+          START: "running",
+        },
+      },
+      running: {
         after: {
-          1: [
-            { target: "runSecs", cond: "notMinute", actions: ["incrementSec"] },
-            { target: "runSecs", cond: "notHour", actions: ["incrementMin"] },
-            { target: "runSecs", cond: "notDay", actions: ["incrementHour"] },
-            { target: "runSecs", cond: "notEnd", actions: ["incrementDay"] },
+          0.01: [
+            { target: "running", cond: "notMinute", actions: ["incrementSec"] },
+            { target: "running", cond: "notHour", actions: ["incrementMin"] },
+            { target: "running", cond: "notDay", actions: ["incrementHour"] },
+            { target: "running", cond: "notEnd", actions: ["incrementDay"] },
             { target: "endChag" },
           ],
         },
